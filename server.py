@@ -39,7 +39,8 @@ def _pick_async_mode() -> str:
     elif pref in valid:
         return pref
     # 지정 안 했거나 이상한 값이면 안전하게 threading
-    return "threading"
+    # Azure VM에서 서버 구동 시 gevent 사용 권장
+    return "gevent"
 
 ASYNC_MODE = _pick_async_mode()
 sio = SocketIO(app, cors_allowed_origins="*", async_mode=ASYNC_MODE)
