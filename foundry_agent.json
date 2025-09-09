@@ -1,0 +1,6 @@
+{
+  "agent_id": "asst_wU6rv40he0BuXVxNKqHssOTQ",
+  "agent_name": "glossify-term-explainer-v7",
+  "project_endpoint": "https://glossify-ai-foundry.services.ai.azure.com/api/projects/glossify-ai-project",
+  "model_deployment": "gpt-4.1"
+}
