@@ -1,5 +1,7 @@
 # Glossify: real-time explanations of domain-specific terms
 ## MS 2025 Summer Interns Project: this repo contains explanation of the BE
+![full diagram](./imgs/glossify-drawio.png)
+
 > Glossify's backend runs on Azure VM, served by Gunicorn (gevent-websocket worker) for Flask + Socket.IO service, bound on 127.0.0.1:5000 behind a reverse proxy.
 ```bash
 gunicorn -k geventwebsocket.gunicorn.workers.GeventWebSocketWorker -w 1 -b 127.0.0.1:5000 server:app
